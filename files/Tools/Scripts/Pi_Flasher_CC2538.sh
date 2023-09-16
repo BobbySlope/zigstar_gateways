@@ -76,7 +76,7 @@ echo 1 > /sys/class/gpio/gpio$BSL_PIN/value
 
 echo
 echo -e "${CYAN}Flashing${NC}"
-python3 cc2538-bsl/cc2538-bsl.py -e -v -w -p --bootloader-sonoff-usb $PORT -ewv $hexfile
+python3 cc2538-bsl/cc2538-bsl.py -e -v -w -p $PORT -ewv $hexfile --bootloader-sonoff-usb
 
 echo
 echo -e "${CYAN}Restart ZigBee${NC}"

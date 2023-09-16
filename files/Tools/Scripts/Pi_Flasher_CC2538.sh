@@ -67,7 +67,7 @@ echo 0 > /sys/class/gpio/gpio$RST_PIN/value
 echo 1 > /sys/class/gpio/gpio$RST_PIN/value
 
 echo
-echo -e "${CYAN}Wait 4 seconds before start${NC}"
+echo -e "${CYAN}Wait 10 seconds before start${NC}"
 sleep 10
 
 echo

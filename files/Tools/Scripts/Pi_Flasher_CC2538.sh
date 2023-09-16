@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PORT=/dev/ttyAMA0
+PORT=/dev/ttyACM0
 RST_PIN=24
 BSL_PIN=27
 
@@ -68,7 +68,7 @@ echo 1 > /sys/class/gpio/gpio$RST_PIN/value
 
 echo
 echo -e "${CYAN}Wait 4 seconds before start${NC}"
-sleep 4
+sleep 10
 
 echo
 echo -e "${CYAN}Disable BSL mode${NC}"

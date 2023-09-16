@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PORT=/dev/ttyAMA0
+PORT=/dev/ttyS0
 RST_PIN=24
 BSL_PIN=27
 

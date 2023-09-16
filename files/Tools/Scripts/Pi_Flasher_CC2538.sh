@@ -84,9 +84,5 @@ echo 0 > /sys/class/gpio/gpio$RST_PIN/value
 echo 1 > /sys/class/gpio/gpio$RST_PIN/value
 
 echo
-echo -e "${RED}Deleting all files${NC}"
-rm -rf cc2538-bsl && rm -rf zigbee-firmware
-rm $hexfile
-rm -- "$0"
 echo
 echo -e "${GREEN}Flashing complete${NC}"
